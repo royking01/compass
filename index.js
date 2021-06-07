@@ -8,6 +8,7 @@ const isIOS = !(
 );
 
 function startCompass() {
+  alert("started");
   if (isIOS) {
     DeviceOrientationEvent.requestPermission()
       .then((response) => {
