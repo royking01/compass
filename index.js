@@ -9,7 +9,10 @@ const isIOS = !(
 
 function startCompass() {
   alert("started");
-  if (isIOS) {
+  if (
+    typeof DeviceOrientationEvent !== "undefined" &&
+    typeof DeviceOrientationEvent.requestPermission === "function"
+  ) {
     DeviceOrientationEvent.requestPermission()
       .then((response) => {
         if (response === "granted") {
