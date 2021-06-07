@@ -4,9 +4,8 @@
     <title>Sample Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="index.js"></script>
   </head>
-  <body onload="initialize()">
+  <body>
     <div class="compass">
       <div class="arrow"></div>
       <div class="compass-circle"></div>
@@ -14,9 +13,6 @@
     </div>
     <button class="start-btn">Start compass</button>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD7S8Mjp6Y_Hk079yb4Q0aCJS5dbPBVdM&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
